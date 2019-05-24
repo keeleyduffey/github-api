@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 function getResults (usernameToFind) {
   const url = `https://api.github.com/users/${usernameToFind}/repos`;
 
@@ -23,7 +22,6 @@ function displayResults (responseJSON) {
 
   $('#results-list').empty();
   if (responseJSON.length === 0) {
-    console.log('here');
     $('#results-list').html(`<ul><li>No results found</li></ul>`);
     $('.results').css('display','block');
   } else {
