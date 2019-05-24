@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Github API</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Github Repo Search</h1>
+      <form id="js-form">
+        <label for="search-handle">Enter Github Handle</label>
+        <input type="text" name="search-handle" id="js-username" placeholder="e.g., abcdefgh" required >
+        <button type="submit">Submit</button>
+      </form>
+      <section class="results">
+        <ul id="results-list"></ul>
+        <p id="js-error-message" class="error-message"></p>
+      </section>
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
